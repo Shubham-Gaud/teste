@@ -17,7 +17,7 @@ def contact():
 def about():
     return render_template("a.html")
 
-@app.route('/op', methods=['GET','POST'])
+@app.route('/op', methods=['POST'])
 def op():
     if request.method == 'POST':
         email = request.form.get("fname")
